@@ -18,8 +18,9 @@ int main() {
     printf("Digite o código da carta: (Máximo de 3 caracteres) \n");
     scanf("%s", Codigo_Da_Carta_1);
 
-    printf("Digite o nome da cidade: --> (Sem espaços) \n");
-    scanf("%s", Cidade_1); // Optei por não usar fgets, então é necessário escrever o nome sem espaços
+    printf("Digite o nome da cidade: \n");
+    getchar();
+    fgets(Cidade_1, 50, stdin);
 
     printf("Digite a população da cidade: \n");
     scanf("%d", &Populacao_1);
@@ -45,8 +46,9 @@ int main() {
     printf("Digite o código da carta: (Máximo de 3 caracteres) \n");
     scanf("%s", Codigo_Da_Carta_2);
 
-    printf("Digite o nome da cidade: --> (Sem espaços) \n");
-    scanf("%s", Cidade_2); // Optei por não usar fgets, então é necessário escrever o nome sem espaços
+    printf("Digite o nome da cidade: \n");
+    getchar();
+    fgets(Cidade_2, 50, stdin);
 
     printf("Digite a população da cidade: \n");
     scanf("%d", &Populacao_2);
@@ -71,8 +73,8 @@ int main() {
     printf("Código: %s\n", Codigo_Da_Carta_1);
     printf("Nome da Cidade: %s\n", Cidade_1);
     printf("População: %d \n", Populacao_1);
-    printf("Área: %f km²\n", Area_1);
-    printf("PIB: %f de reais\n", PIB_1);
+    printf("Área: %.2f km²\n", Area_1);
+    printf("PIB: %.2f de reais\n", PIB_1);
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos_1);
     printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional_1);
     printf("PIB per Capita: %.2f reais\n", PIB_per_Capita_1);
@@ -84,8 +86,8 @@ int main() {
     printf("Código: %s\n", Codigo_Da_Carta_2);
     printf("Nome da Cidade: %s\n", Cidade_2);
     printf("População: %d \n", Populacao_2);
-    printf("Área: %f km²\n", Area_2);
-    printf("PIB: %f de reais\n", PIB_2);
+    printf("Área: %.2f km²\n", Area_2);
+    printf("PIB: %.2f de reais\n", PIB_2);
     printf("Número de Pontos Turísticos: %d\n", Pontos_Turisticos_2);
     printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional_2);
     printf("PIB per Capita: %.2f reais\n", PIB_per_Capita_2);
